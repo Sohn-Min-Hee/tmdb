@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Home from './routes/Home'
 import Drama from './routes/Drama'
 import Comedy from './routes/Comedy'
+import Footer from './components/Footer'
 
 import './App.css'
 // import { useEffect, useState} from 'react';
@@ -18,6 +19,7 @@ function App() {
                 <Route path="Drama" element={<Drama/>}/>
                 <Route path="Comedy" element={<Comedy/>}/>
             </Routes>
+            <Footer/>
         </>
     )
 
