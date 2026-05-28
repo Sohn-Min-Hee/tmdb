@@ -5,6 +5,8 @@ import Home from './routes/Home'
 import Drama from './routes/Drama'
 import Comedy from './routes/Comedy'
 import Footer from './components/Footer'
+import QuickBtn from './components/QuickBtn'
+import RecommendDetail from './components/RecommendDetail'
 
 import './App.css'
 // import { useEffect, useState} from 'react';
@@ -16,10 +18,12 @@ function App() {
             <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="Drama" element={<Drama/>}/>
-                <Route path="Comedy" element={<Comedy/>}/>
+                <Route path="/Drama" element={<Drama/>}/>
+                <Route path="/Comedy" element={<Comedy/>}/>
+                <Route path="/RecommendDetail/:id" element={<RecommendDetail/>}/>
             </Routes>
             <Footer/>
+            <QuickBtn/>
         </>
     )
 

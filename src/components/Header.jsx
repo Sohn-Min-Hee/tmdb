@@ -5,8 +5,8 @@ import './header.scss'
 
 const Header = () => {
     return (
-        <div className='header'>
-            <h1 className='logo'><BiSolidCameraMovie /></h1>
+        <div className='header bg-black text-white p-5 justify-between items-center'>
+            <h1 className='logo'><Link to="/"><BiSolidCameraMovie /></Link></h1>
             <div id='nav'>
                 <nav>
                     <ul>
